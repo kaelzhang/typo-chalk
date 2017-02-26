@@ -14,7 +14,7 @@
 
 # typo-chalk
 
-<!-- description -->
+chalk helper set for typo 1.x
 
 ## Install
 
@@ -25,7 +25,12 @@ $ npm install typo-chalk --save
 ## Usage
 
 ```js
-const typo_chalk = require('typo-chalk')
+require('typo')()
+.use(require('typo-chalk'))
+.template(`Once in a {{blue blue}} moon.`)
+.then(console.log)
+
+// The word "blue" will be blue
 ```
 
 ## License
